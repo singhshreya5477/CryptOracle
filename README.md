@@ -6,6 +6,8 @@ A sophisticated cryptocurrency price forecasting system that combines historical
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-2.13-orange)
 ![License](https://img.shields.io/badge/License-MIT-green)
 
+**🚀 Quick Start:** [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/singhshreya5477/CryptOracle/blob/main/CryptOracle_Colab.ipynb) (Train model with free GPU in 10 minutes!)
+
 ---
 
 ## 🌟 What Makes This Project Unique?
@@ -99,10 +101,26 @@ python run_pipeline.py
 python run_pipeline.py
 ```
 
-### Option 2: Google Colab (No Setup Required!)
+### Option 2: Google Colab (⭐ Easiest - No Setup Required!)
+
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/singhshreya5477/CryptOracle/blob/main/CryptOracle_Colab.ipynb)
 
-Click the badge above or upload `CryptOracle_Colab.ipynb` to Google Colab for instant GPU-powered training!
+**🎉 Recommended for first-time users!**
+
+Why use Colab?
+- ✅ **No installation** - runs in your browser
+- ✅ **Free GPU access** - trains 2-3x faster than CPU
+- ✅ **Pre-installed TensorFlow** - no version conflicts
+- ✅ **All visualizations included** - see results immediately
+- ✅ **Takes ~10 minutes** - from start to trained model
+
+**How to use:**
+1. Click the badge above
+2. Click "Runtime → Run all" in Colab
+3. Wait ~10 minutes for training to complete
+4. Download your trained model and metrics
+
+Or manually: Upload `CryptOracle_Colab.ipynb` to [Google Colab](https://colab.research.google.com/)
 
 ### Option 3: Run Step-by-Step
 
