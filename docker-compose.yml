@@ -1,0 +1,28 @@
+version: '3.8'
+
+services:
+  cryptoracle:
+    build: .
+    container_name: cryptoracle
+    volumes:
+      - ./data:/app/data
+      - ./models:/app/models
+      - ./logs:/app/logs
+    ports:
+      - "8501:8501"  # Streamlit dashboard
+    environment:
+      - PYTHONIOENCODING=utf-8
+      - TF_CPP_MIN_LOG_LEVEL=2  # Reduce TensorFlow logging
+    command: tail -f /dev/null  # Keep container running for interactive use
+    
+  # Optional: Jupyter notebook service
+  notebook:
+    build: .
+    container_name: cryptoracle-notebook
+    volumes:
+      - ./:/app
+    ports:
+      - "8888:8888"
+    command: jupyter notebook --ip=0.0.0.0 --port=8888 --no-browser --allow-root
+    environment:
+      - PYTHONIOENCODING=utf-8
